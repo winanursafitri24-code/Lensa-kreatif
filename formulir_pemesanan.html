@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulir Pemesanan | Lensa Kreatif</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Formulir Pemesanan Jasa</h1>
+<nav>
+<ul>
+<li><a href="index.html">Kembali ke Home</a></li>
+</ul>
+</nav>
+</header>
+
+<main class="container">
+
+<form id="orderForm">
+
+<input type="hidden" id="promo_code" name="promo_code" value="DISCOUNT2026">
+
+<section>
+<h3>Data Pribadi</h3>
+
+<div class="form-group">
+<label>Nama Lengkap:</label>
+<input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+</div>
+
+<div class="form-group">
+<label>Password Akun:</label>
+<input type="password" id="pass" name="pass" placeholder="Password untuk cek status">
+</div>
+
+<div class="form-group">
+<label>Email:</label>
+<input type="email" id="email" name="email" required>
+</div>
+
+<div class="form-group">
+<label>Nomor WhatsApp (Tel):</label>
+<input type="tel" id="telepon" name="telepon">
+</div>
+
+<div class="form-group">
+<label>Alamat:</label>
+<textarea id="alamat" name="alamat" rows="3" cols="30"></textarea>
+</div>
+
+<div class="form-group">
+<label for="desa">Desa / Kelurahan:</label>
+<select name="desa" id="desa">
+<option value="Cipada">Cipada</option>
+<option value="Jambudipa">Jambudipa</option>
+<option value="Kertawangi">Kertawangi</option>
+<option value="Padaasih">Padaasih</option>
+<option value="Pasirhalang">Pasirhalang</option>
+<option value="Pasirlangu">Pasirlangu</option>
+<option value="Sadangmekar">Sadangmekar</option>
+<option value="Tugumukti">Tugumukti</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="kecamatan">Kecamatan:</label>
+<select name="kecamatan" id="kecamatan">
+<option value="Batujajar">Batujajar</option>
+<option value="Cihampelas">Cihampelas</option>
+<option value="Cikalongwetan">Cikalongwetan</option>
+<option value="Cililin">Cililin</option>
+<option value="Cipatat">Cipatat</option>
+<option value="Cipeundeuy">Cipeundeuy</option>
+<option value="Cipongkor">Cipongkor</option>
+<option value="Cisarua">Cisarua</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Kabupaten / Kota:</label>
+<select name="kab" id="kab">
+<option value="Kabupaten Bandung">Kabupaten Bandung</option>
+<option value="Kabupaten Bandung Barat">Kabupaten Bandung Barat</option>
+<option value="Kabupaten Bogor">Kabupaten Bogor</option>
+<option value="Kabupaten Bekasi">Kabupaten Bekasi</option>
+<option value="Kabupaten Cianjur">Kabupaten Cianjur</option>
+<option value="Kota Bandung">Kota Bandung</option>
+<option value="Kota Banjar">Kota Banjar</option>
+<option value="Kota Bogor">Kota Bogor</option>
+<option value="Kota Bekasi">Kota Bekasi</option>
+<option value="Kota Cimahi">Kota Cimahi</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="prov">Provinsi:</label>
+<select name="prov" id="prov">
+<option value="Provinsi Bali">Provinsi Bali</option>
+<option value="Provinsi Banten">Provinsi Banten</option>
+<option value="Provinsi DI Yogyakarta">Provinsi DI Yogyakarta</option>
+<option value="Provinsi DKI Jakarta">Provinsi DKI Jakarta</option>
+<option value="Provinsi Lampung">Provinsi Lampung</option>
+<option value="Provinsi Jawa Barat">Provinsi Jawa Barat</option>
+<option value="Provinsi Jawa Tengah">Provinsi Jawa Tengah</option>
+<option value="Provinsi Jawa Timur">Provinsi Jawa Timur</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Kode Pos:</label>
+<input type="text" id="kodepos" name="kodepos" placeholder="Masukkan kode pos anda (cth: 40123)" required>
+</div>
+
+</section>
+
+<section>
+<h3>Detail Pesanan</h3>
+
+<div class="form-group">
+<label>Cari Paket Wisata:</label>
+<input type="search" id="cari" name="cari" placeholder="Ketik paket...">
+</div>
+
+<div class="form-group">
+<label>Tanggal Pemotretan:</label>
+<input type="date" id="tanggal" name="tanggal">
+</div>
+
+<div class="form-group">
+<label>Jam Mulai:</label>
+<input type="time" id="jam" name="jam">
+</div>
+
+<div class="form-group">
+<label>Jumlah Personil:</label>
+<input type="number" id="jumlah" name="jumlah" min="1" max="50">
+</div>
+
+<div class="form-group">
+<label>Link Referensi Gaya:</label>
+<input type="url" id="referensi" name="referensi" placeholder="https://pinterest.com/...">
+</div>
+
+<div class="form-group">
+<label>Pilih Warna Tema:</label>
+<input type="color" id="warna" name="warna" value="#2c3e50">
+</div>
+
+</section>
+
+<section>
+<h3>Pilihan Tambahan</h3>
+
+<div class="form-group">
+<label>Metode Pembayaran:</label>
+<input type="radio" name="payment" value="Transfer" checked> Transfer Bank
+<input type="radio" name="payment" value="E-wallet"> E-wallet
+</div>
+
+<div class="form-group">
+<label>Layanan Tambahan:</label>
+<input type="checkbox" name="addon" value="Makeup"> Jasa Makeup
+<input type="checkbox" name="addon" value="Kostum"> Sewa Kostum
+</div>
+
+<div class="form-group">
+<label>Unggah Bukti KTP/ID:</label>
+<input type="file" id="dokumen" name="dokumen">
+</div>
+
+</section>
+
+<input type="button" value="Cek Ketersediaan" onclick="alert('Slot Tersedia!')">
+<input type="reset" value="Kosongkan Form">
+
+<br><br>
+<hr>
+
+<input type="submit" value="Kirim Pesanan Sekarang">
+
+</form>
+
+<div id="result" style="margin-top:20px; padding:15px; background:#e8f4fd; display:none;">
+<h3>Data Berhasil Disimpan</h3>
+<p id="displayData"></p>
+</div>
+
+</main>
+
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(event){
+event.preventDefault();
+
+const formData = new FormData(this);
+const dataObj = {};
+
+const addons = formData.getAll('addon');
+
+formData.forEach((value, key)=>{
+if(key === 'addon'){
+dataObj[key] = addons;
+}else if(value instanceof File){
+dataObj[key] = value.name ? value.name : "Tidak ada file";
+}else{
+dataObj[key] = value;
+}
+});
+
+localStorage.setItem('pesananTerakhir', JSON.stringify(dataObj));
+
+let outputHtml = "<ul style='list-style:none;padding:0'>";
+for(const [key,value] of Object.entries(dataObj)){
+const label = key.replace('_',' ').toUpperCase();
+outputHtml += `<li style="margin-bottom:5px;border-bottom:1px solid #eee;padding-bottom:5px;">
+<strong>${label}:</strong> ${Array.isArray(value) ? value.join(', ') : value}
+</li>`;
+}
+outputHtml += "</ul>";
+
+document.getElementById('displayData').innerHTML = outputHtml;
+document.getElementById('result').style.display = 'block';
+document.getElementById('result').scrollIntoView({behavior:'smooth'});
+
+alert("Halo " + dataObj.nama + ", data pesanan Anda telah disimpan di sistem lokal!");
+this.reset();
+});
+
+window.addEventListener('load', ()=>{
+const savedData = localStorage.getItem('pesananTerakhir');
+if(savedData){
+console.log("Data pesanan terakhir:", JSON.parse(savedData));
+}
+});
+</script>
+
+</body>
+  </html>
