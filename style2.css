@@ -1,0 +1,171 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* --- FORM & BUTTON STYLING (THE UPGRADE) --- */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Efek melayang */
+    margin-bottom: 30px;
+}
+
+section h3 {
+    border-left: 5px solid #2c3e50;
+    padding-left: 15px;
+    margin-top: 30px;
+    color: #2c3e50;
+}
+
+.form-group { margin-bottom: 20px; }
+label { display: block; font-weight: 600; margin-bottom: 8px; color: #555; }
+
+/* Styling semua input teks & sejenisnya */
+input[type="text"], input[type="email"], input[type="password"],
+input[type="tel"], input[type="number"], input[type="url"],
+input[type="date"], input[type="time"], input[type="search"], select, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    transition: all 0.3s ease; /* Transisi halus */
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* --- STYLING BUTTONS --- */
+/* Reset default button style */
+input[type="submit"], input[type="reset"], input[type="button"], button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+/* Tombol Kirim (Submit) */
+input[type="submit"] {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: white;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+}
+
+/* Tombol Reset */
+input[type="reset"] {
+    background: #e74c3c;
+    color: white;
+}
+
+/* Tombol Cek Ketersediaan (Button biasa) */
+input[type="button"] {
+    background: #34495e;
+    color: white;
+}
+
+/* Hover Effects */
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+    transform: translateY(-2px); /* Efek sedikit naik saat hover */
+    filter: brightness(1.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Active/Click Effects */
+input[type="submit"]:active, input[type="reset"]:active {
+    transform: translateY(0);
+}
+
+/* Input Type Color & File */
+input[type="color"] {
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+input[type="file"] {
+    background: #f8f9fa;
+    padding: 10px;
+    border: 1px dashed #ccc;
+}
+
+/* Responsivitas menu */
+@media (max-width:600px) {
+    nav ul li { display: block; margin-bottom: 10px; }
+    form { padding: 15px; }
+  }
+  
